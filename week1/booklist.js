@@ -1,3 +1,23 @@
+
+
+// ];
+// console.log(books);
+///////////////////////
+// // function test() {
+//     const newUl = document.createElement('ul');
+//     document.body.appendChild(newUl);
+
+// for (let i = 0; i < books.length; i++) {
+//     var indexOfArray = books[i];
+//     indexOfArray = document.createElement('li');
+//     newUl.appendChild(indexOfArray);
+// }
+// console.log(newUl);
+
+// }
+// let idOfLi = indexOfArray.setAttribute("id", "idOfLi");
+// test();
+////////Q4&Q5&Q6&Q7//////
 let Objects = [{
         id: "Jennifer",
         title: "A Visit from the goon squad",
