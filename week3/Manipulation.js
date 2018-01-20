@@ -1,106 +1,41 @@
-let images = {
-  Jennifer: 'Images/A Visit from the goon squad.jpg',
-  Ahn: 'Images/The salmon who dared to leap higher.jpg',
-  John: 'Images/Rabbit is rich.jpg',
-  Jane: 'Images/The theory of everything.jpg',
-  Anne: 'Images/Diary of anne frank.jpg',
-  Stephen: 'Images/A brief history of time.jpg',
-  Mustafa: 'Images/The Shell.jpg',
-  Liz: 'Images/In love and war.jpg',
-  Muhsin: 'Images/one thousand and one night.jpg',
-  Margaret: 'Images/Gone with the wind.jpg',
-};
+/*let imgArray = ['http://imgs.abduzeedo.com/files/books/book-learningweb.jpg',
+    'https://images.gr-assets.com/books/1384736553l/18197267.jpg',
+
+'https://images-na.ssl-images-amazon.com/images/I/41R9Qctt%2BbL.jpg',
+
+'http://01eba9f59936628a9c10-a672e330d72d3d2e689cb64015c1f8c5.r97.cf2.rackcdn.com/javascript-and-jquery-book-cover.png',
+
+ 'https://images-na.ssl-images-amazon.com/images/I/51dB3Tal6NL._SX401_BO1,204,203,200_.jpg',
+
+'https://images-na.ssl-images-amazon.com/images/I/41jQ0rWRLjL._SX258_BO1,204,203,200_.jpg',
+
+
+  'https://images-na.ssl-images-amazon.com/images/I/51TUDt%2B86gL._SX394_BO1,204,203,200_.jpg',
+
+  'https://images-na.ssl-images-amazon.com/images/I/5193Mf0kSjL._SX415_BO1,204,203,200_.jpg',
+
+  'https://responsivedesign.is/wp-content/uploads/2017/01/designingfortheweb-cover.jpg',
+
+'https://images.gr-assets.com/books/1386923832l/19430292.jpg'
+
+]*/
 
 
 
 
-let Objects = [
-  {
-    id: 'Jennifer',
-    title: 'A Visit from the goon squad',
+/*let myDiv = document.getElementById ('div');
 
-  },
-  {
-    id: 'Ahn',
-    title: 'The salmon who dared to leap higher',
- 
-  },
-  {
-    id: 'John',
-    title: 'Rabbit is rich',
-  
-  },
-  {
-    id: 'Jane',
-    title: 'The theory of everything',
-  
-  },
-  {
-    id: 'Anne',
-    title: 'Diary of anne frank',
-
-  },
-  {
-    id: 'Stephen',
-    title: 'A brief history of time',
- 
-  },
-  {
-    id: 'Mustafa',
-    title: 'The Shell',
-
-  },
-  {
-    id: 'Liz',
-    title: 'In love and war',
-
-  },
-  {
-    id: 'Muhsin',
-    title: 'One thousand and one night',
- 
-  },
-  {
-    id: 'Margaret',
-    title: 'Gone with the wind',
-
-  },
-];
-
-
-// console.log(Objects[0]);
-
-function createUl () {
-  let booksUl = document.createElement ('ul');
-  booksUl.setAttribute ('id', 'books');
-  for (var index = 0; index < Objects.length; index++) {
-    var idOfBook = Objects[index].id;
-    
-    
-    let li = document.createElement ('li');
+function myBooks () {
+  for (let i = 0; i < imgArray.length; i++) {
+    let myUl = document.createElement ('ul');
+    let myLi = document.createElement ('li');
+   let imgArray =document.createElement('img')
+   imgArray.appendChild(myLi)
+      myLi.appendChild(myUl);
    
-    let img = document.createElement ('img');
-
- 
+    myUl.appendChild (myDiv);
   
-
-    li.setAttribute ('id', 'idOfBooks');
-
-  
-
-    for (let key of Object.keys (images)) {
-      let valueOfKeys = images[key];
-      if (idOfBook == key) {
-        img.src = valueOfKeys;
-        img.alt = key;
-      }
-    }
-
-    booksUl.appendChild (li);
-    li.appendChild (img);
- 
   }
-  console.log (booksUl);
-  document.body.appendChild (booksUl);
 }
-createUl ();
+myBooks ();
+*/
