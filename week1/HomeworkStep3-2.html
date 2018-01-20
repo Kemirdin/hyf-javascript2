@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+</head>
+
+<body>
+    <div id="myBookList"></div>
+    <script type="text/javascript">
+        var names = ['Learning Web Design',
+            "Don't Make Me Think! ",
+            'HTML and CSS: Design and Build Websites',
+            'JavaScript & Jquery',
+            'The Principles of Beautiful Web Design 3e',
+            'Content Strategy for the Web',
+            'Design for Hackers',
+            'Bulletproof Web Design',
+            'A Practical Guide to Designing for the Web',
+            'Web Standards Solutions',];
+        var ul = document.createElement('ul');
+        document.getElementById('myBookList').appendChild(ul);
+
+        names.forEach(function (name) {
+            var li = document.createElement('li');
+            ul.appendChild(li);
+            li.innerHTML += name;
+        });
+    </script>
+</body>
+
+</html>

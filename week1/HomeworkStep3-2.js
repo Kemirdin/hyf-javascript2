@@ -15,7 +15,7 @@ const myArry = [
   'A Practical Guide to Designing for the Web',
   'Web Standards Solutions',
 ];
-console.log (myArry);
+
 
 
 let myDiv = document.getElementById ('div');
