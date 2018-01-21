@@ -1,4 +1,4 @@
-/*let imgArray = ['http://imgs.abduzeedo.com/files/books/book-learningweb.jpg',
+let imgArray = ['http://imgs.abduzeedo.com/files/books/book-learningweb.jpg',
     'https://images.gr-assets.com/books/1384736553l/18197267.jpg',
 
 'https://images-na.ssl-images-amazon.com/images/I/41R9Qctt%2BbL.jpg',
@@ -18,24 +18,23 @@
 
 'https://images.gr-assets.com/books/1386923832l/19430292.jpg'
 
-]*/
+]
 
 
 
 
-/*let myDiv = document.getElementById ('div');
+let myDiv = document.getElementById('root');
 
 function myBooks () {
   for (let i = 0; i < imgArray.length; i++) {
-    let myUl = document.createElement ('ul');
-    let myLi = document.createElement ('li');
-   let imgArray =document.createElement('img')
-   imgArray.appendChild(myLi)
-      myLi.appendChild(myUl);
+    let myUl = document.createElement('ul');
+    let myLi = document.createElement('li');
+    let myImg = document.createElement('img');
+    myImg.setAttribute('src', imgArray[i]);
+    myLi.appendChild(myImg);
+    myUl.appendChild(myLi);
    
-    myUl.appendChild (myDiv);
-  
+    myDiv.appendChild(myUl);
   }
 }
 myBooks ();
-*/
