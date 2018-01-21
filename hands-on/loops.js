@@ -69,10 +69,10 @@
   ];
 
   /**
-   * Compare two arrays for equality
-   * @param {string[]} actual - The array to be tested
-   * @param {string[]} expected - The expected array
-   */
+     * Compare two arrays for equality
+     * @param {string[]} actual - The array to be tested
+     * @param {string[]} expected - The expected array
+     */
   function isEqual (actual, expected) {
     // Ensure that 'actual' and 'expected' arguments are both arrays
     // and of equal length
@@ -103,51 +103,68 @@
   }
 
   /**
-   * Simulates the robot 'turn' function
-   * @param {string} turnDirection - The direction to turn to: 'left' or 'right'
-   */
+     * Simulates the robot 'turn' function
+     * @param {string} turnDirection - The direction to turn to: 'left' or 'right'
+     */
   function turn (turnDirection) {
     console.log ('TURN ' + turnDirection);
   }
 
   /**
-   * Simulates the robot 'move' function
-   */
+     * Simulates the robot 'move' function
+     */
   function move () {
     console.log ('MOVE');
   }
 
   /**
-   *
-   * @param {string} command - A command: 'TURN-LEFT', 'TURN-RIGHT' or 'MOVE'
-   */
+     *
+     * @param {string} command - A command: 'TURN-LEFT', 'TURN-RIGHT' or 'MOVE'
+     */
   function execute (command) {
     // Add your code here to : use a switch statement
-    // Call the 'turn()' or 'move()' function depending on the command
+    switch (command) {
+      case 'TURN-LEFT':
+        turn ('left');
+        break;
+      case 'TURN-RIGHT':
+        turn ('right');
+        break;
+      case 'MOVE':
+        move ();
+        break;
+      default:
+        console.log ('Something is wrong');
+    }
   }
+  // Call the 'turn()' or 'move()' function depending on the command
 
+  execute ('TURN-LEF');
   /**
-   * Execute a sequence of robot commands
-   * @param {string[]} commands - The robot commands to execute
-   */
+ * Execute a sequence of robot commands
+ * @param {string[]} commands - The robot commands to execute
+ */
   function executeSequence (commands) {
     console.log ('\n--- starting execution ---');
     // Add your code here to: use a for loop or a forEach method
-    // Call the 'execute()' function for each command
+    for (let i = 0; i < commands.length; i++) {
+      execute (commands[i]);
+    }
+    // console.log(commands);    // Call the 'execute()' function for each command
   }
-
+  executeSequence (expected);
   /**
-   * Convert English commands
-   * @param {*} commands - Command data to convert: use enlishCommanfs
-   */
+ * Convert English commands
+ * @param {*} commands - Command data to convert: use enlishCommanfs
+ */
   function convertEnglish (commands) {
     // Add your code here
   }
 
   /**
-   * Convert frenchCommands array
-   * @param {*} commands - Command data to convert: use frenchCommands
-   */
+ * Convert frenchCommands array
+ * @param {*} commands - Command data to convert: use frenchCommands
+ */
   function convertFrench () {
     console.log ('convertFrench');
     // French -> English
@@ -159,9 +176,9 @@
   }
 
   /**
-   * Convert chattyFrenchCommands array
-   * @param {*} commands - Command data to convert: use chattyFrenchCommands
-   */
+ * Convert chattyFrenchCommands array
+ * @param {*} commands - Command data to convert: use chattyFrenchCommands
+ */
   function convertChattyFrench (commands) {
     // French -> English
     // marche -> move
@@ -176,25 +193,25 @@
   }
 
   /**
-   * Convert actionCommands array
-   * @param {*} commands - Command data to convert: use actionCommands
-   */
+ * Convert actionCommands array
+ * @param {*} commands - Command data to convert: use actionCommands
+ */
   function convertActions (commands) {
     // Add your code here
   }
 
   /**
-   * Convert shorthandCommands string
-   * @param {*} commands - Command data to convert: use shorthandCommands
-   */
+ * Convert shorthandCommands string
+ * @param {*} commands - Command data to convert: use shorthandCommands
+ */
   function convertShorthand (commands) {
     // Add your code here
   }
 
   /**
-   * Convert verbalCommands array
-   * @param {*} commands - Command data to convert: use verbalCommands
-   */
+ * Convert verbalCommands array
+ * @param {*} commands - Command data to convert: use verbalCommands
+ */
   function convertVerbal (commands) {
     // Add your code here
   }
@@ -211,8 +228,8 @@
   ];
 
   /**
-   * Test your converters here
-   */
+ * Test your converters here
+ */
   const actual = sampleCommands;
 
   console.log ('\n--- testing ---');
@@ -222,4 +239,6 @@
   } else {
     console.error ('>>> test failed');
   }
+
+  executeSequence (sampleCommands);
 }

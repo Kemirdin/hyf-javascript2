@@ -106,6 +106,7 @@ function createUl () {
         img.alt = key;
       }
     }
+    //for (let i=0;)
 
     booksUl.appendChild (li);
     li.appendChild (img);
