@@ -127,7 +127,15 @@ console.log(tookHour);
 
 //Multiply the each duration by a per-hour rate for billing (you can decide yourself what Maartje should make per hour) and sum it all up.
 
-let Multiply= tasks.map((duration) =>{
+let currentValue= tasks.map((duration) =>{
                     return duration * 50;
-})
-console.log(Multiply);
+}).reduce( (accumulator, currentValue)=> {
+                    return [(+accumulator) + (+current)+'€';
+];
+}
+    console.log(currentValue + '€');
+
+
+
+
+//Output a formatted Euro amount.
