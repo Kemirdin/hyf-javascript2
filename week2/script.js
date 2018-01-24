@@ -93,3 +93,8 @@ let tuesday = [
 ];
 
 let tasks = monday.concat (tuesday);
+
+/*Collect two days' worth of tasks. Array.concat ();*/
+
+console.log(tasks);
+
