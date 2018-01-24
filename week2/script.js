@@ -111,5 +111,23 @@ let getHour = tasks.filter(function (number) {
 })
   console.log (hours + ':' + minutes);
 
+// or  Convert the task durations to hours, instead of minutes.
 
-  
+let getHour = tasks.map((task) => {
+    return (task.duration / 60);
+})
+console.log(getHour);
+
+//Filter out everything that took two hours or more (remove from the collection)
+
+let tookHour = tasks.filter((duration) => {
+    return duration >= 2;
+})
+console.log(tookHour);
+
+//Multiply the each duration by a per-hour rate for billing (you can decide yourself what Maartje should make per hour) and sum it all up.
+
+let Multiply= tasks.map((duration) =>{
+                    return duration * 50;
+})
+console.log(Multiply);
