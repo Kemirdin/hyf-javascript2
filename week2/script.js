@@ -41,3 +41,5 @@ var newNumbers = numbers
   });
 
 console.log ('The doubled numbers are', newNumbers); // [2, 6]
+
+
