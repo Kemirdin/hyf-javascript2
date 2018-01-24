@@ -15,10 +15,9 @@ console.log("The doubled numbers are", newNumbers); // [2, 6]
 
 //map & filter. Transform values
 
-var numbers = [1, 2, 3, 4];
+let numbers = [1, 2, 3, 4];
 
-var newNumbers = numbers
-  .filter (function (number) {
+let newNumbers = numbers.filter (function (number) {
     return number % 2 !== 0;
   })
   .map (function (number) {
@@ -27,15 +26,17 @@ var newNumbers = numbers
 
 console.log ('The doubled numbers are', newNumbers); // [2, 6]
 
-//map & filter and Arrow functions.Transform values
+/*map & filter and Arrow functions.Transform values ,
+function(number) with arrow function would be like (number) => */
+
 
 var numbers = [1, 2, 3, 4];
 
 var newNumbers = numbers
-  .filter ( (number) {
+  .filter ( (number) => {
     return number % 2 !== 0;
   })
-  .map (function (number) {
+  .map ((number) => {
     return number * 2;
   });
 
