@@ -132,7 +132,7 @@ let currentValue= tasks.map((duration) =>{
 }).reduce( (accumulator, currentValue)=> {
                     return [(+accumulator) + (+current)+'€';
 ];
-}
+})
     console.log(currentValue + '€');
 
 
