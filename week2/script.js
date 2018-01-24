@@ -30,9 +30,9 @@ console.log ('The doubled numbers are', newNumbers); // [2, 6]
 function(number) with arrow function would be like (number) => */
 
 
-var numbers = [1, 2, 3, 4];
+let numbers = [1, 2, 3, 4];
 
-var newNumbers = numbers
+let newNumbers = numbers
   .filter ( (number) => {
     return number % 2 !== 0;
   })
@@ -98,3 +98,18 @@ let tasks = monday.concat (tuesday);
 
 console.log(tasks);
 
+// Convert the task durations to hours, instead of minutes.
+
+let getHour = tasks.filter(function (number) {
+    return number>0  !== 0;
+}).map((number) => {
+   
+    /* let hours = Math.floor (duration / 60);*/
+  
+    return hours = Math.trunc(number / 60) // I used Math.trunc(), which is a new method added in 2015.
+    minutes = number % 60;
+})
+  console.log (hours + ':' + minutes);
+
+
+  
