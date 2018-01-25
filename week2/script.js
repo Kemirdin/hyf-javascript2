@@ -139,3 +139,12 @@ let currentValue= tasks.map((duration) =>{
 
 
 //Output a formatted Euro amount.
+
+let totalInEuros = amounts
+  .map (function (dollar_amount) {
+    return '€' + dollar_amount.toFixed (2);
+  })
+  .reduce (function (formatted_dollar_amount) {
+    return formatted_dollar_amount;
+  });
+

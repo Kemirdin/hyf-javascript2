@@ -60,7 +60,14 @@ let totalInEuros = 0;
 amounts.forEach(amount => ...);
 console.log(...);
 
-  .map (function (dollar_amount) {
+products.forEach (product => {
+  product.sizes.forEach (size => {
+    console.log (size);
+  });
+});
+
+
+ let totalInEuros= amounts.map (function (dollar_amount) {
     return '$' + dollar_amount.toFixed (2);
   })
   .reduce (function (formatted_dollar_amount) {
