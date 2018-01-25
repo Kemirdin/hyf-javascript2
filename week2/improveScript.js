@@ -46,13 +46,29 @@ let tasks = monday.concat (tuesday);
 
 console.log(tasks);
 
-const hourDurations = tasks.map(task =>  ... );
-const shortDurations = hourDurations.filter(duration => ...);
-const amounts = shortDurations.map(duration => ...);
+const hourDurations = tasks.map(task => {
+    return task.duration / 60;
+  } );
+const shortDurations = hourDurations.filter(duration => {
+    return duration >= 2;
+  });
+const amounts = shortDurations.map(duration =>  {
+    return duration * 50  });
+
 
 let totalInEuros = 0;
 amounts.forEach(amount => ...);
 console.log(...);
+
+  .map (function (dollar_amount) {
+    return '$' + dollar_amount.toFixed (2);
+  })
+  .reduce (function (formatted_dollar_amount) {
+    return formatted_dollar_amount;
+  });
+
+
+
 
 // Convert the task durations to hours, instead of minutes.
 
