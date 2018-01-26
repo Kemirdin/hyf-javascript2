@@ -65,7 +65,11 @@ let totalInEuros = 0;
 amounts.forEach(amount =>{
     return '€' + amount.toFixed (2);
   });
-console.log(totalInEuros);
+console.log(totalInEuros); 
 
-
+/*let accumulator=amounts.reduce(function (accumulator, current) {
+  return [(+accumulator) + (+current)];
+}).map(function (amount) {
+  return '€' + amounts.toFixed(2);
+})[0];*/
 
