@@ -55,10 +55,11 @@ console.log(hourDurations);
 const shortDurations = hourDurations.filter(duration => {
     return duration >= 2;
 });
-  console
+console.log(shortDurations);
+
 const amounts = shortDurations.map(duration =>  {
     return duration * 50  });
-
+co
 
 let totalInEuros = 0;
 amounts.forEach(amount =>{
