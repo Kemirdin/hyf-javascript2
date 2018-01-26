@@ -59,7 +59,7 @@ console.log(shortDurations);
 
 const amounts = shortDurations.map(duration =>  {
     return duration * 50  });
-co
+console.log(amounts);
 
 let totalInEuros = 0;
 amounts.forEach(amount =>{
