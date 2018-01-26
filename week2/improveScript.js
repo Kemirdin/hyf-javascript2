@@ -1,4 +1,12 @@
-let monday = [
+
+
+let totalInEuros = 0;
+amounts.forEach(amount =>{
+    return '€' + amount.toFixed (2);
+  });
+console.log(totalInEuros); 
+
+/*let monday = [
   {
     name: 'Write a summary HTML/CSS',
     duration: 180,
@@ -61,15 +69,24 @@ const amounts = shortDurations.map(duration =>  {
     return duration * 50  });
 console.log(amounts);
 
-let totalInEuros = 0;
-amounts.forEach(amount =>{
-    return '€' + amount.toFixed (2);
-  });
-console.log(totalInEuros); 
 
-/*let accumulator=amounts.reduce(function (accumulator, current) {
-  return [(+accumulator) + (+current)];
-}).map(function (amount) {
-  return '€' + amounts.toFixed(2);
-})[0];*/
+
+
+let totalInEuros = amounts.map ( (Euro_amount) =>{
+  return '€' + dollar_amount.toFixed (2);
+}).reduce ((formatted_dollar_amount) =>{
+  return formatted_dollar_amount;
+});
+
+/*let totalInEuros = amounts.map(amount => {
+  return '€' + amount.toFixed (2);
+});*/
+
+
+/*console.log(totalInEuros);
+let accumulator = amounts.reduce(function (accumulator, current) {
+   return [(+accumulator) + (+current)];
+ }).map(function (amount) {
+   return '€' + amounts.toFixed(2);
+ })[0];*/
 
