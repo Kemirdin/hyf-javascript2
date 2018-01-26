@@ -67,9 +67,5 @@ amounts.forEach(amount =>{
   });
 console.log(totalInEuros);
 
-/*products.forEach (product => {
-  product.sizes.forEach (size => {
-    console.log (size);
-  });
-});*/
+
 
