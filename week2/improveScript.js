@@ -48,10 +48,14 @@ console.log(tasks);
 
 const hourDurations = tasks.map(task => {
     return task.duration / 60;
-  } );
+});
+
+console.log(hourDurations);
+
 const shortDurations = hourDurations.filter(duration => {
     return duration >= 2;
-  });
+});
+  console
 const amounts = shortDurations.map(duration =>  {
     return duration * 50  });
 
