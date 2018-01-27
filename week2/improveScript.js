@@ -59,17 +59,18 @@ const shortDurations = hourDurations.filter(duration => {
 });
 console.log(shortDurations);
 
+const houryRate = 42.45;
+
 const amounts = shortDurations.map(duration =>  {
-    return duration * 50  });
+    return duration * hourlyRate  });
 console.log(amounts);
 
 
 
 
-let totalInEuros = amounts.map ( (Euro_amount) =>{
-  return '€' + dollar_amount.toFixed (2);
-}).reduce ((formatted_dollar_amount) =>{
-  return formatted_dollar_amount;
-});
+let totalInEuros = 0;
+amounts.forEach (amount => (total += amount));
+
+console.log (`Maartje has earned €${total.toFixed (2)}`);
 
 
