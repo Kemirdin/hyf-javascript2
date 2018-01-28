@@ -210,11 +210,15 @@ let convertedArr = [];
 for (let j = 0; j < actionCommands.length; j++) {
   if (actionCommands[j].times > 1) {
     let temp = actionCommands[j].times;
-    for (let i = temp; i > 1; i--)
-      convertedArr.push (actionCommands[j]);
+    for (let i = temp; i<temp; i--)
+     
+      convertedArr.push (actionCommands[j].type);
   } else {
-    convertedArr.push (actionCommands[j]);
+    
+
+    convertedArr.push (actionCommands[j].type);
   }
+  return convertedArr;
 }
 
   }
