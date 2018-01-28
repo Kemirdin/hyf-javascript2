@@ -139,11 +139,10 @@
   }
   // Call the 'turn()' or 'move()' function depending on the command
 
-  execute ('TURN-LEF');
   /**
- * Execute a sequence of robot commands
- * @param {string[]} commands - The robot commands to execute
- */
+     * Execute a sequence of robot commands
+     * @param {string[]} commands - The robot commands to execute
+     */
   function executeSequence (commands) {
     console.log ('\n--- starting execution ---');
     // Add your code here to: use a for loop or a forEach method
@@ -152,28 +151,34 @@
     }
     // console.log(commands);    // Call the 'execute()' function for each command
   }
-  executeSequence (expected);
   /**
- * Convert English commands
- * @param {*} commands - Command data to convert: use enlishCommanfs
- */
+     * Convert English commands
+     * @param {*} commands - Command data to convert: use enlishCommanfs
+     */
   function convertEnglish (commands) {
     // Add your code here
-    
-  // Add your code here
-  return commands.map (element => {
-    return element.toUpperCase ();
-  });
-}
-
+    return commands.map (element => {
+      return element.toUpperCase ();
+    });
   }
 
   /**
- * Convert frenchCommands array
- * @param {*} commands - Command data to convert: use frenchCommands
- */
-  function convertFrench () {
+     * Convert frenchCommands array
+     * @param {*} commands - Command data to convert: use frenchCommands
+     */
+  function convertFrench (commands) {
     console.log ('convertFrench');
+    const convertedCommands = commands.map (command => {
+      switch (command) {
+        case 'marche':
+          return 'MOVE';
+        case 'à droit':
+          return 'TURN-RIGHT';
+        case 'à gauche':
+          return 'TURN-LEFT';
+      }
+    });
+    return convertedCommands;
     // French -> English
     // marche -> move
     // à droit -> turn-right
@@ -183,9 +188,9 @@
   }
 
   /**
- * Convert chattyFrenchCommands array
- * @param {*} commands - Command data to convert: use chattyFrenchCommands
- */
+     * Convert chattyFrenchCommands array
+     * @param {*} commands - Command data to convert: use chattyFrenchCommands
+     */
   function convertChattyFrench (commands) {
     // French -> English
     // marche -> move
@@ -200,41 +205,39 @@
   }
 
   /**
- * Convert actionCommands array
- * @param {*} commands - Command data to convert: use actionCommands
- */
+     * Convert actionCommands array
+     * @param {*} commands - Command data to convert: use actionCommands
+     */
   function convertActions (commands) {
     // Add your code here
-    // Add your code here
-let convertedArr = [];
-for (let j = 0; j < actionCommands.length; j++) {
-  if (actionCommands[j].times > 1) {
-    let temp = actionCommands[j].times;
-    for (let i = temp; i<temp; i--)
-     
-      convertedArr.push (actionCommands[j].type);
-  } else {
-    
-
-    convertedArr.push (actionCommands[j].type);
-  }
-  return convertedArr;
-}
-
+    let convertedArr = [];
+    for (let j = 0; j < actionCommands.length; j++) {
+      if (actionCommands[j].times > 1) {
+        let temp = actionCommands[j].times;
+        for (let i = temp; i < temp; i++) {
+          console.log ('1', actionCommands[j].type);
+          convertedArr.push (actionCommands[j].type);
+        }
+      } else {
+        console.log ('2', actionCommands[j].type);
+        convertedArr.push (actionCommands[j].type);
+      }
+    }
+    return convertedArr;
   }
 
   /**
- * Convert shorthandCommands string
- * @param {*} commands - Command data to convert: use shorthandCommands
- */
+     * Convert shorthandCommands string
+     * @param {*} commands - Command data to convert: use shorthandCommands
+     */
   function convertShorthand (commands) {
     // Add your code here
   }
 
   /**
- * Convert verbalCommands array
- * @param {*} commands - Command data to convert: use verbalCommands
- */
+     * Convert verbalCommands array
+     * @param {*} commands - Command data to convert: use verbalCommands
+     */
   function convertVerbal (commands) {
     // Add your code here
   }
@@ -251,9 +254,9 @@ for (let j = 0; j < actionCommands.length; j++) {
   ];
 
   /**
- * Test your converters here
- */
-  const actual = sampleCommands;
+     * Test your converters here
+     */
+  const actual = convertFrench (frenchCommands);
 
   console.log ('\n--- testing ---');
   if (isEqual (actual, expected)) {
@@ -262,6 +265,9 @@ for (let j = 0; j < actionCommands.length; j++) {
   } else {
     console.error ('>>> test failed');
   }
+  //execute('TURN-LEF');
 
-  executeSequence (sampleCommands);
+  //convertActions(actionCommands);
+  //executeSequence(sampleCommands);
+  //convertEnglish(englishCommands);
 }
