@@ -205,6 +205,18 @@
  */
   function convertActions (commands) {
     // Add your code here
+    // Add your code here
+let convertedArr = [];
+for (let j = 0; j < actionCommands.length; j++) {
+  if (actionCommands[j].times > 1) {
+    let temp = actionCommands[j].times;
+    for (let i = temp; i > 1; i--)
+      convertedArr.push (actionCommands[j]);
+  } else {
+    convertedArr.push (actionCommands[j]);
+  }
+}
+
   }
 
   /**
