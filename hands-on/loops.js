@@ -159,6 +159,13 @@
  */
   function convertEnglish (commands) {
     // Add your code here
+    
+  // Add your code here
+  return commands.map (element => {
+    return element.toUpperCase ();
+  });
+}
+
   }
 
   /**
