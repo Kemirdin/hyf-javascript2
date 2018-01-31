@@ -4,3 +4,30 @@
 console.log (
   '\n***************question 1 ************************************************************\n'
 );
+
+
+
+// function functionOne (x) {
+//   return x;
+// }
+
+// function functionTwo (var1) {
+//   // some code
+// }
+
+// functionTwo (functionOne);
+
+
+function foo(x) {
+    x ='Hi, myFunction here!';
+
+  console.log (foo(x));
+}
+function bar(param) {
+    param='Hello, I am bar!';
+
+  console.log ('Hello, I am bar!');
+  
+}
+
+bar(foo);
