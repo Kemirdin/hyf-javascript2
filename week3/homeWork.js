@@ -85,17 +85,42 @@ console.log(
   '\n***************question 3 ************************************************************\n'
 );
 
+// function repeatStringNumTimes(str, num) {
+
+//   var newStr = '';
+
+//   if (num < 0) return newStr;
+
+//   newStr = str.repeat(num);
+
+//   return newStr;
+
+// }
+
+// repeatStringNumTimes("abc", 3);
+//-----Q3.1-----//
+//3.1 A for loop.
+
+// for (let i = 0; i < 3; i++) {
+//   console.log(i);
+// }
 
 function repeatStringNumTimes(str, num) {
 
   var newStr = '';
+  for (num = 0; num < str.length; num++) {
 
-  if (num < 0) return newStr;
 
-  newStr = str.repeat(num);
 
-  return newStr;
 
-}
+    newStr = str.repeat(num);
 
-repeatStringNumTimes("abc", 3);
+    return newStr;
+
+  }
+
+  repeatStringNumTimes("abc", 3);
+
+
+  //-----Q3.2-----
+//A while loop.
