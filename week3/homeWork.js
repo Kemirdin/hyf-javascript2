@@ -63,7 +63,7 @@ setTimeout(function () {
 // function should iterate over the array and call the first callback
 // if the array value is divisible by 3
 
-function loveTheThrees(collection) {
+/*function loveTheThrees(collection) {
   var newArray = []
   for (var i = 0; i < collection.length; i++) {
     if (myArray[i] % 3 === 0) {
@@ -72,10 +72,19 @@ function loveTheThrees(collection) {
   }
   return newArray;
 }
-
+*/
 // The
 // function should call the second callback
 // if the array value is divisible by 5
+/*function loveTheFives (collection) {
+  var newArray = [];
+  for (var i = 0; i < collection.length; i++) {
+    if (myArray[i] % 5 === 0) {
+      newArray.push (collection[i]);
+    }
+  }
+  return newArray;
+}*/
 
 
 // Both functions should be called
@@ -83,7 +92,7 @@ function loveTheThrees(collection) {
 
 
 
-function fizzbuzz(param) {
+/*function threeFive(param) {
   //create an array
   var array = [];
   //begin the loop
@@ -101,8 +110,13 @@ function fizzbuzz(param) {
     else if (i % 5 === 0) {
       array.push(i);
     }
-  }
+  }*/
 
+function threeFive (startIndex, stopIndex, threeCallback, fiveCallback) {
+  // make array
+  // start at beginning of array and check if you should call threeCallback or fiveCallback or go on to next
+}
+threeFive (10, 15, sayThree, sayFive);
 
 
 
