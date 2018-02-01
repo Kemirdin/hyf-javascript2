@@ -51,10 +51,7 @@ setTimeout(function () {
   console.log("I will be executed in 5 seconds.");
 }, 5000);
 
-// You must write a
-// function that takes 4 arguments. - A start value - An end value - A callback to call
-// if the number is divisible by 3 - A callback to use
-// if the number is divisible by 5
+
 
 // The
 // function should generate an array containing values from start value to end value(inclusive).
@@ -63,7 +60,7 @@ setTimeout(function () {
 // function should iterate over the array and call the first callback
 // if the array value is divisible by 3
 
-/*function loveTheThrees(collection) {
+function loveTheThrees(collection) {
   var newArray = []
   for (var i = 0; i < collection.length; i++) {
     if (myArray[i] % 3 === 0) {
@@ -72,11 +69,11 @@ setTimeout(function () {
   }
   return newArray;
 }
-*/
+
 // The
 // function should call the second callback
 // if the array value is divisible by 5
-/*function loveTheFives (collection) {
+function loveTheFives (collection) {
   var newArray = [];
   for (var i = 0; i < collection.length; i++) {
     if (myArray[i] % 5 === 0) {
@@ -84,7 +81,7 @@ setTimeout(function () {
     }
   }
   return newArray;
-}*/
+}
 
 
 // Both functions should be called
@@ -92,7 +89,7 @@ setTimeout(function () {
 
 
 
-/*function threeFive(param) {
+function threeFive(param) {
   //create an array
   var array = [];
   //begin the loop
@@ -110,11 +107,33 @@ setTimeout(function () {
     else if (i % 5 === 0) {
       array.push(i);
     }
-  }*/
+  }
+  
+  
+  // You must write a
+// function that takes 4 arguments. - A start value - An end value - A callback to call
+// if the number is divisible by 3 - A callback to use
+// if the number is divisible by 5
+
 
 function threeFive (startIndex, stopIndex, threeCallback, fiveCallback) {
-  // make array
-  // start at beginning of array and check if you should call threeCallback or fiveCallback or go on to next
+  let arr = [];
+   for(var i = startIndex; i <= stopIndex; i++){
+    if(i % 3 === 0 && i % 5 === 0){
+            //push to the array
+            array.push(i);
+        }
+        //detect values divisible by 3
+        else if(i % 3 === 0){
+            array.push(i);
+        }
+        //detect values divisible by 5
+        else if(i % 5 === 0){
+            array.push(i);
+  }
+   
+  return arr;
+}
 }
 threeFive (10, 15, sayThree, sayFive);
 
