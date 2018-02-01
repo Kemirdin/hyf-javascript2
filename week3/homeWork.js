@@ -33,4 +33,19 @@ function bar() {
 foo(bar);
 
 
+console.log(
+  '\n***************question 2 ************************************************************\n'
+);
 
+
+// function makeTimeoutFunc(param) {
+//   return function () {
+//     // does something with param
+//   }
+// }
+
+
+ 
+setTimeout(function () {
+  console.log("I will be executed in 2 seconds.");
+}, 5000);
