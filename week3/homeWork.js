@@ -77,12 +77,31 @@ function loveTheThrees(collection) {
 // function should call the second callback
 // if the array value is divisible by 5
 
+
 // Both functions should be called
 // if the array value is divisible by both 3 and 5
 
 
 
-
+function fizzbuzz(param) {
+  //create an array
+  var array = [];
+  //begin the loop
+  for (i = 1; i <= param; i++) {
+    //detect values divisble by 3 and 5
+    if (i % 3 === 0 && i % 5 === 0) {
+      //push to the array
+      array.push(i);
+    }
+    //detect values divisible by 3
+    else if (i % 3 === 0) {
+      array.push(i);
+    }
+    //detect values divisible by 5
+    else if (i % 5 === 0) {
+      array.push(i);
+    }
+  }
 
 
 
