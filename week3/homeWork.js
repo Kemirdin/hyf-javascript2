@@ -18,13 +18,13 @@ console.log (
 // functionTwo (functionOne);
 //In this case, functionTwo can use functionOne inside of it.
 
-function foo(x) {
-    x ='Hi, myFunction here!';
+function foo(param1) {
+   let param1 ='Hi, myFunction here!';
 
   console.log (foo(x));
 }
-function bar(param) {
-    param='Hello, I am bar!';
+function bar(param2) {
+   let  param2='Hello, I am bar!';
 
   console.log ('Hello, I am bar!');
   
