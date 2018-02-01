@@ -98,6 +98,8 @@ console.log(
 // }
 
 // repeatStringNumTimes("abc", 3);
+
+
 //-----Q3.1-----//
 //3.1 A for loop.
 
@@ -118,9 +120,103 @@ function repeatStringNumTimes(str, num) {
     return newStr;
 
   }
+}
 
   repeatStringNumTimes("abc", 3);
 
 
-  //-----Q3.2-----
+//-----Q3.2-----
 //A while loop.
+
+function repeatStringNumTimes(str, num) {
+
+  var newStr = '';
+  var num = 0;
+  while (num < str.length) {
+    num++;
+
+
+
+    newStr = str.repeat(num);
+
+    return newStr;
+
+  }
+}
+   
+    repeatStringNumTimes("abc", 3);
+
+  
+  
+//-----Q3.2-----
+//A do loop.
+function repeatStringNumTimes(str, num) {
+
+  var newStr = '';
+  var num = 0;
+  do {
+    num += 1;
+
+  }
+
+  while (num < str.length);
+
+
+
+
+  newStr = str.repeat(num);
+
+  return newStr;
+
+}
+
+
+repeatStringNumTimes("abc", 3);
+
+
+
+
+console.log(
+  '\n***************question 4 ************************************************************\n'
+);
+
+
+var Car = function () {
+  this.wheels = 4;
+  this.engines = 1;
+  this.seats = 1;
+};
+
+
+
+var MotorBike = function () {
+  this.wheels = 2;
+  this.engines = 1;
+  this.seats = 1;
+};
+
+console.log(
+  '\n***************question 5 ************************************************************\n'
+);
+//Nesting For Loops
+
+function multiplyAll(arr) {
+  var product = 1;
+ 
+
+  for (var i = 0; i < arr.length; i++) {
+    for (var x = 0; x < arr[i].length; x++) {
+      product *= arr[i][x];
+    }
+  }
+
+
+  return product;
+}
+
+
+multiplyAll([
+  [1, 2],
+  [3, 4],
+  [5, 6, 7]
+]);
