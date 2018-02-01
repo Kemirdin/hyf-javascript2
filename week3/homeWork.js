@@ -16,7 +16,7 @@ console.log (
 // }
 
 // functionTwo (functionOne);
-
+//In this case, functionTwo can use functionOne inside of it.
 
 function foo(x) {
     x ='Hi, myFunction here!';
