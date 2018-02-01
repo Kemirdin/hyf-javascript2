@@ -7,27 +7,30 @@ console.log (
 
 
 
-// function functionOne (x) {
-//   return x;
+// function foo() {
+//   bar.apply(null, arguments);
 // }
 
-// function functionTwo (var1) {
-//   // some code
+// function bar() {
+//   console.log('Hello, I am bar!');
 // }
-
-// functionTwo (functionOne);
+// foo(bar);
 //In this case, functionTwo can use functionOne inside of it.
 
-function foo(param1) {
-   let param1 ='Hi, myFunction here!';
+function foo(x) {
+   
 
-  console.log (foo(x));
+  console.log('Hi, myFunction here!');
+  x();
 }
-function bar(param2) {
-   let  param2='Hello, I am bar!';
+function bar() {
+    
 
   console.log ('Hello, I am bar!');
   
 }
 
-bar(foo);
+foo(bar);
+
+
+
