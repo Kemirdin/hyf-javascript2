@@ -63,6 +63,16 @@ setTimeout(function () {
 // function should iterate over the array and call the first callback
 // if the array value is divisible by 3
 
+function loveTheThrees(collection) {
+  var newArray = []
+  for (var i = 0; i < collection.length; i++) {
+    if (myArray[i] % 3 === 0) {
+      newArray.push(collection[i])
+    }
+  }
+  return newArray;
+}
+
 // The
 // function should call the second callback
 // if the array value is divisible by 5
@@ -70,10 +80,8 @@ setTimeout(function () {
 // Both functions should be called
 // if the array value is divisible by both 3 and 5
 
-function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
-    
-}
-threeFive(10, 15, sayThree, sayFive);
+
+
 
 
 
