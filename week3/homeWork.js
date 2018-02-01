@@ -70,6 +70,10 @@ setTimeout(function () {
 // Both functions should be called
 // if the array value is divisible by both 3 and 5
 
+function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
+    
+}
+threeFive(10, 15, sayThree, sayFive);
 
 
 
