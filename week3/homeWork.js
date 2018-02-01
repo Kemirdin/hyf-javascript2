@@ -44,7 +44,8 @@ console.log(
 //   }
 // }
 
-
+//If you run the above code it will wait 5 seconds and print I am done.
+//Please read something about setTimeout on MDN.The first argument to the setTimeout call is the callback(doIt)
  
 setTimeout(function () {
   console.log("I will be executed in 2 seconds.");
