@@ -287,7 +287,20 @@ multiplyAll([
 
 console.log(
   '\n***************question 6************************************************************\n'
-);
+  );
+  //We did some work with arrays - var arr = [1, 2, 3]
+  //We can also nest arrays inside arrays like this
+  //var arr2d = [[1, 2], [3, 4], [5, 6]](for math people you can think of this as a matrix)
+  //How would you print all the items of an array with 3 dimensions ? How about with K dimensions ?
+  //What if you didn't know how deep the array was nested? (You don't have to write code for this but think about it)  
+
+ 
+ 
+  var arr2d = [
+    [1, 2],
+    [3, 4],
+    [5, 6]
+  ];
 
 
 console.log(
