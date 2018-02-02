@@ -296,7 +296,7 @@ console.log(
 
  
  
-  var arr2d = [
+  var myArray = [
     [1, 2],
     [3, 4],
     [5, 6]
