@@ -15,14 +15,14 @@
 // var add = addSix (15);
 
 // add (10);
-var counter = function () {
-  var _counter = 0;
+let counter = function () {
+  let myCounter = 0;
   return {
     add: function (num) {
-      _counter += num;
+      myCounter += num;
     },
     retrieve: function () {
-      return 'the value of counter is currently: ' + _counter;
+      return 'the value of counter is currently: ' + myCounter;
     },
   };
 };
