@@ -25,5 +25,4 @@ let addSix = createBase (6);
 
 
 console.log (addSix (12));
-console.log (addSeven (3));
-console.log (addEight (1));
+
