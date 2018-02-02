@@ -15,19 +15,15 @@
 // var add = addSix (15);
 
 // add (10);
-let counter = function () {
-  let myCounter = 0;
-  return {
-    add: function (num) {
-      myCounter += num;
-    },
-    retrieve: function () {
-      return 'the value of counter is currently: ' + myCounter;
-    },
+function createBase (val) {
+  return function (x) {
+    return (x += val);
   };
-};
+}
 
-var count = counter ();
-count.add (9);
-count.add (5);
-count.retrieve ();
+let addSix = createBase (6);
+
+
+console.log (addSix (12));
+console.log (addSeven (3));
+console.log (addEight (1));
