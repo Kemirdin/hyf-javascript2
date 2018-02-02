@@ -301,6 +301,14 @@ console.log(
     [3, 4],
     [5, 6]
   ];
+  var arrText='';
+for (var i = 0; i < arr.length; i++) {
+  for (var j = 0; j < arr[i].length; j++) {
+    arrText += arr[i][j] + ' ';
+  }
+  console.log (arrText);
+  arrText = '';
+}
 
 
 console.log(
