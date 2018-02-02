@@ -6,12 +6,28 @@
 
 // My Solution:
 
-function addSix (n) {
-  return function CreateBase (num) {
-    return n + num;
+// function addSix () {
+//   return function CreateBase (num) {
+//     return n + num;
+//   };
+// }
+
+// var add = addSix (15);
+
+// add (10);
+var counter = function () {
+  var _counter = 0;
+  return {
+    add: function (num) {
+      _counter += num;
+    },
+    retrieve: function () {
+      return 'the value of counter is currently: ' + _counter;
+    },
   };
-}
+};
 
-var add = addSix (15);
-
-add (10);
+var count = counter ();
+count.add (9);
+count.add (5);
+count.retrieve ();
