@@ -310,7 +310,20 @@ for (var i = 0; i < arr.length; i++) {
   arrText = '';
 }
 
+// var arr = new Array (3);
+// // create 2D
+// for (i = 0; i < arr.length; i++) {
+//   arr[i] = new Array (3);
+// }
+// // create 3D
+// for (i = 0; i < arr.length; i++) {
+//   for (j = 0; j < arr[0].length; j++) {
+//     arr[i][j] = new Array (3);
+//   }
+// }
+
 
 console.log(
   '\n***************question 7 ************************************************************\n'
 );
+
