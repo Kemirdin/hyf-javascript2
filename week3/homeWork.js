@@ -60,28 +60,28 @@ setTimeout(function () {
 // function should iterate over the array and call the first callback
 // if the array value is divisible by 3
 
-function loveTheThrees(collection) {
-  var newArray = []
-  for (var i = 0; i < collection.length; i++) {
-    if (myArray[i] % 3 === 0) {
-      newArray.push(collection[i])
-    }
-  }
-  return newArray;
-}
+// function loveTheThrees(collection) {
+//   var newArray = []
+//   for (var i = 0; i < collection.length; i++) {
+//     if (myArray[i] % 3 === 0) {
+//       newArray.push(collection[i])
+//     }
+//   }
+//   return newArray;
+// }
 
 // The
 // function should call the second callback
 // if the array value is divisible by 5
-function loveTheFives (collection) {
-  var newArray = [];
-  for (var i = 0; i < collection.length; i++) {
-    if (myArray[i] % 5 === 0) {
-      newArray.push (collection[i]);
-    }
-  }
-  return newArray;
-}
+// function loveTheFives (collection) {
+//   var newArray = [];
+//   for (var i = 0; i < collection.length; i++) {
+//     if (myArray[i] % 5 === 0) {
+//       newArray.push (collection[i]);
+//     }
+//   }
+//   return newArray;
+// }
 
 
 // Both functions should be called
@@ -89,25 +89,31 @@ function loveTheFives (collection) {
 
 
 
-function threeFive(param) {
-  //create an array
-  var array = [];
-  //begin the loop
-  for (i = 1; i <= param; i++) {
-    //detect values divisble by 3 and 5
-    if (i % 3 === 0 && i % 5 === 0) {
-      //push to the array
-      array.push(i);
+  function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
+    const numbers = [];
+    for (let i = startIndex; i <= stopIndex; i++) {
+      numbers.push(i);
     }
-    //detect values divisible by 3
-    else if (i % 3 === 0) {
-      array.push(i);
-    }
-    //detect values divisible by 5
-    else if (i % 5 === 0) {
-      array.push(i);
+
+    numbers.forEach(num => {
+      if (num % 3 === 0) {
+        threeCallback(num);
+      }
+      if (num % 5 === 0) {
+        fiveCallback(num);
+      }
+    })
+  }
+
+  // uses a closure
+  function sayDivisibleBy(divisor) {
+    return function (num) {
+      console.log(`${num} is divisible by ${divisor}`);
     }
   }
+
+  threeFive(10, 15, sayDivisibleBy(3), sayDivisibleBy(5));
+}
   
   
   // You must write a
