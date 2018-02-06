@@ -86,6 +86,11 @@ setTimeout(function () {
 
 // Both functions should be called
 // if the array value is divisible by both 3 and 5
+// You must write a
+// function that takes 4 arguments. - A start value - An end value - A callback to call
+// if the number is divisible by 3 - A callback to use
+// if the number is divisible by 5
+
 
 
 
@@ -115,33 +120,8 @@ setTimeout(function () {
   threeFive(10, 15, sayDivisibleBy(3), sayDivisibleBy(5));
 
   
-  
-  // You must write a
-// function that takes 4 arguments. - A start value - An end value - A callback to call
-// if the number is divisible by 3 - A callback to use
-// if the number is divisible by 5
 
 
-function threeFive (startIndex, stopIndex, threeCallback, fiveCallback) {
-  let arr = [];
-   for(var i = startIndex; i <= stopIndex; i++){
-    if(i % 3 === 0 && i % 5 === 0){
-            //push to the array
-            array.push(i);
-        }
-        //detect values divisible by 3
-        else if(i % 3 === 0){
-            array.push(i);
-        }
-        //detect values divisible by 5
-        else if(i % 5 === 0){
-            array.push(i);
-  }
-   
-  return arr;
-}
-}
-threeFive (10, 15, sayThree, sayFive);
 
 
 
