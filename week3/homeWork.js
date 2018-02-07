@@ -280,13 +280,7 @@ console.log(
   //How would you print all the items of an array with 3 dimensions ? How about with K dimensions ?
   //What if you didn't know how deep the array was nested? (You don't have to write code for this but think about it)  
 
-// let arr2d = [[1, 2], [3, 4], [5, 6]];
 
-// for (let i = 0; i < arr2d.length; i++) {
-//   for (let j = 0; j < arr2d[i].length; j++) {
-//     console.log ('i will do it with two for loops :' + arr2d[i][j]);
-//   }
-// }
 
  
   let myArray = [
@@ -295,9 +289,9 @@ console.log(
     [5, 6]
   ];
   let arrText='';
-for (let i = 0; i < arr.length; i++) {
-  for (let j = 0; j < arr[i].length; j++) {
-    arrText += arr[i][j] + ' ';
+for (let i = 0; i < myArray.length; i++) {
+  for (let j = 0; j < myArray[i].length; j++) {
+    arrText += myArray[i][j] + ' ';
   }
   console.log (arrText);
   arrText = '';
