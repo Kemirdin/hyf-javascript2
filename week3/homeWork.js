@@ -7,15 +7,7 @@ console.log (
 
 
 
-// function foo() {
-//   bar.apply(null, arguments);
-// }
 
-// function bar() {
-//   console.log('Hello, I am bar!');
-// }
-// foo(bar);
-//In this case, functionTwo can use functionOne inside of it.
 
 function foo(x) {
    
@@ -151,11 +143,7 @@ console.log(
 
 
 //-----Q3.1-----//
-//3.1 A for loop.
 
-// for (let i = 0; i < 3; i++) {
-//   console.log(i);
-// }
 {
   function repeatStringNumTimes(str, num) {
 
