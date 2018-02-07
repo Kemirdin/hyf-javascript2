@@ -332,6 +332,8 @@ function f1 (val) {
 }
 f1 (x);
 console.log (x);
+// at this point val is still 9
+//Yes, Javascript always passes by value, 
 
 let y = {x: 9};
 function f2 (val) {
@@ -339,4 +341,10 @@ function f2 (val) {
   return val;
 }
 f2 (y);
-console.log (y);
+console.log(y);
+
+
+// so it is now { x : 9}
+// val definitely doesn't point to the new object created as the last line
+//so if we are passing object or array as an argument to the method, 
+//then there is a possibility that value of the object can change.
