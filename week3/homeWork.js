@@ -39,17 +39,12 @@ setTimeout(function () {
 }, 5000);
 
 //-------------//
-
-
-
-
-//-------------//
 let new1Array = [];
 
 function loveTheThrees(collection) {
   for (let i = 0; i < collection.length; i++) {
     if (myArray[i] % 3 === 0) {
-      newArray.push(collection[i])
+      new1Array.push(collection[i])
     }
   }
   return new1Array;
