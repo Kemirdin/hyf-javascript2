@@ -30,11 +30,6 @@ console.log(
 );
 
 
-// function makeTimeoutFunc(param) {
-//   return function () {
-//     // does something with param
-//   }
-// }
 
 //If you run the above code it will wait 5 seconds and print I am done.
 //Please read something about setTimeout on MDN.The first argument to the setTimeout call is the callback(doIt)
@@ -285,17 +280,7 @@ for (let i = 0; i < myArray.length; i++) {
   arrText = '';
 }
 
-// var arr = new Array (3);
-// // create 2D
-// for (i = 0; i < arr.length; i++) {
-//   arr[i] = new Array (3);
-// }
-// // create 3D
-// for (i = 0; i < arr.length; i++) {
-//   for (j = 0; j < arr[0].length; j++) {
-//     arr[i][j] = new Array (3);
-//   }
-// }
+
 
 
 console.log(
