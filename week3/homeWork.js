@@ -44,7 +44,7 @@ setTimeout(function () {
 
 
 //-------------//
-let newArray = [];
+let new1Array = [];
 
 function loveTheThrees(collection) {
   for (let i = 0; i < collection.length; i++) {
@@ -52,20 +52,20 @@ function loveTheThrees(collection) {
       newArray.push(collection[i])
     }
   }
-  return newArray;
+  return new1Array;
 }
 
 //-------------//
-let newArray = [];
+let new2Array = [];
 
 function loveTheFives (collection) {
  
   for (let i = 0; i < collection.length; i++) {
     if (myArray[i] % 5 === 0) {
-      newArray.push (collection[i]);
+      new2Array.push (collection[i]);
     }
   }
-  return newArray;
+  return new2Array;
 }
 
 //-------------//
@@ -73,7 +73,7 @@ function loveTheFives (collection) {
 
 
 
-  function threeFive(startIndex, stopIndex, threeCallback, fiveCallback) {
+  function threeFive(startIndex, stopIndex) {
     const numbers = [];
     for (let i = startIndex; i <= stopIndex; i++) {
       numbers.push(i);
