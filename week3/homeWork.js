@@ -156,25 +156,25 @@ console.log(
 // for (let i = 0; i < 3; i++) {
 //   console.log(i);
 // }
+{
+  function repeatStringNumTimes(str, num) {
 
-function repeatStringNumTimes(str, num) {
-
-  var newStr = '';
-  for (num = 0; num < str.length; num++) {
-
-
+    var newStr = '';
+    for (num = 0; num < str.length; num++) {
 
 
-    newStr = str.repeat(num);
 
-    return newStr;
 
+      newStr = str.repeat(num);
+
+      return newStr;
+
+    }
   }
+
+  console.log(repeatStringNumTimes("abc", 3));
+
 }
-
-  repeatStringNumTimes("abc", 3);
-
-
 //-----Q3.2-----
 //A while loop.
 
