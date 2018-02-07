@@ -12,7 +12,7 @@
 
   function createBase (num) {
     return function (n) {
-      return (n += num);
+      return (n + num);
     };
   }
 
