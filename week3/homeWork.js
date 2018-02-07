@@ -194,7 +194,7 @@ function repeatStringNumTimes(str, num) {
   }
 }
    
-    repeatStringNumTimes("abc", 3);
+   console.log (repeatStringNumTimes("abc", 3));
 
   
   
@@ -221,7 +221,7 @@ function repeatStringNumTimes(str, num) {
 }
 
 
-repeatStringNumTimes("abc", 3);
+ console.log(repeatStringNumTimes("abc", 3));
 
 
 
