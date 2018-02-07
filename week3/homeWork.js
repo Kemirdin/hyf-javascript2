@@ -280,33 +280,28 @@ console.log(
   //How would you print all the items of an array with 3 dimensions ? How about with K dimensions ?
   //What if you didn't know how deep the array was nested? (You don't have to write code for this but think about it)  
 
- const arr3d = [[[1, 2], [3, 4]], [[5, 6], [7, 8]], [[9, 10], [11, 12]]];
+// let arr2d = [[1, 2], [3, 4], [5, 6]];
 
-// This function calls itself recursively
-function printAll (arg) {
-  if (Array.isArray (arg)) {
-    arg.forEach (elem => printAll (elem));
-  } else {
-    console.log (arg);
-  }
-}
-
-printAll (arr3d);
+// for (let i = 0; i < arr2d.length; i++) {
+//   for (let j = 0; j < arr2d[i].length; j++) {
+//     console.log ('i will do it with two for loops :' + arr2d[i][j]);
+//   }
+// }
 
  
-//   var myArray = [
-//     [1, 2],
-//     [3, 4],
-//     [5, 6]
-//   ];
-//   var arrText='';
-// for (var i = 0; i < arr.length; i++) {
-//   for (var j = 0; j < arr[i].length; j++) {
-//     arrText += arr[i][j] + ' ';
-//   }
-//   console.log (arrText);
-//   arrText = '';
-// }
+  let myArray = [
+    [1, 2],
+    [3, 4],
+    [5, 6]
+  ];
+  let arrText='';
+for (let i = 0; i < arr.length; i++) {
+  for (let j = 0; j < arr[i].length; j++) {
+    arrText += arr[i][j] + ' ';
+  }
+  console.log (arrText);
+  arrText = '';
+}
 
 // var arr = new Array (3);
 // // create 2D
