@@ -38,45 +38,37 @@ setTimeout(function () {
   console.log("I will be executed in 5 seconds.");
 }, 5000);
 
+//-------------//
 
 
-// The
-// function should generate an array containing values from start value to end value(inclusive).
-
-// Then the
-// function should iterate over the array and call the first callback
-// if the array value is divisible by 3
-
-// function loveTheThrees(collection) {
-//   var newArray = []
-//   for (var i = 0; i < collection.length; i++) {
-//     if (myArray[i] % 3 === 0) {
-//       newArray.push(collection[i])
-//     }
-//   }
-//   return newArray;
-// }
-
-// The
-// function should call the second callback
-// if the array value is divisible by 5
-// function loveTheFives (collection) {
-//   var newArray = [];
-//   for (var i = 0; i < collection.length; i++) {
-//     if (myArray[i] % 5 === 0) {
-//       newArray.push (collection[i]);
-//     }
-//   }
-//   return newArray;
-// }
 
 
-// Both functions should be called
-// if the array value is divisible by both 3 and 5
-// You must write a
-// function that takes 4 arguments. - A start value - An end value - A callback to call
-// if the number is divisible by 3 - A callback to use
-// if the number is divisible by 5
+//-------------//
+let newArray = [];
+
+function loveTheThrees(collection) {
+  for (let i = 0; i < collection.length; i++) {
+    if (myArray[i] % 3 === 0) {
+      newArray.push(collection[i])
+    }
+  }
+  return newArray;
+}
+
+//-------------//
+let newArray = [];
+
+function loveTheFives (collection) {
+ 
+  for (let i = 0; i < collection.length; i++) {
+    if (myArray[i] % 5 === 0) {
+      newArray.push (collection[i]);
+    }
+  }
+  return newArray;
+}
+
+//-------------//
 
 
 
@@ -89,10 +81,10 @@ setTimeout(function () {
 
     numbers.forEach(num => {
       if (num % 3 === 0) {
-        threeCallback(num);
+        loveTheThrees(num);
       }
       if (num % 5 === 0) {
-        fiveCallback(num);
+        loveTheFives(num);
       }
     })
   }
