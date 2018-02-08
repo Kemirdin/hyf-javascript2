@@ -194,7 +194,7 @@ console.log(
   '\n***************question 4 ************************************************************\n'
 );
 
-
+{
 var Car = function () {
   this.wheels = 4;
   this.engines = 1;
@@ -208,7 +208,9 @@ var MotorBike = function () {
   this.engines = 1;
   this.seats = 1;
 };
-
+  console.log(new Car());
+  console.log(new MotorBike());
+}
 console.log(
   '\n***************question 5 ************************************************************\n'
 );
@@ -234,6 +236,7 @@ multiplyAll([
   [3, 4],
   [5, 6, 7]
 ]);
+console.log(product);
 
 console.log(
   '\n***************question 6************************************************************\n'
