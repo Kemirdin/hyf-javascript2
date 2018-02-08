@@ -45,29 +45,29 @@ setTimeout(function () {
 
 
 //-------------//
-let divisibleBy3 = x => {
-  // if (x % 3 === 0 && x % 5 === 0) {
+let divisibleBy3 = loveTheThrees => {
+  // if (loveTheThrees % 3 === 0 && loveTheFives % 5 === 0) {
   
-  if (x % 3 === 0) {
-    console.log (x + ' is divisible by 3.');
+  if (loveTheThrees % 3 === 0) {
+    console.log (loveTheThrees + ' is divisible by 3.');
   }
 };
-let divisibleBy5 = x => {
-  // if (x % 5 === 0 && x % 3 === 0) {
+let divisibleBy5 = loveTheFives => {
+  // if (loveTheFives % 5 === 0 && LoveTheThress % 3 === 0) {
  
-    if (x % 5 === 0) {
-    console.log (x + ' is divisible by 5.');
+    if (loveTheFives % 5 === 0) {
+    console.log (loveTheFives + ' is divisible by 5.');
   }
 };
-let myFunction = (startVal, endVal, x, y) => {
+let myFunction = (startVal, endVal, loveTheThrees, loveTheFives) => {
   let myArray = [];
   for (let i = startVal; i <= endVal; i++) {
     myArray.push (startVal);
     startVal++;
   }
   console.log (myArray);
-  myArray.forEach (x);
-  myArray.forEach (y);
+  myArray.forEach (loveTheThrees);
+  myArray.forEach (loveTheFives);
 };
 myFunction (15, 25, divisibleBy3, divisibleBy5);
 
