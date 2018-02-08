@@ -230,13 +230,13 @@ function multiplyAll(arr) {
   return product;
 }
 
-
+let finalResult=
 multiplyAll([
   [1, 2],
   [3, 4],
   [5, 6, 7]
 ]);
-console.log(product);
+console.log(finalResult);
 
 console.log(
   '\n***************question 6************************************************************\n'
