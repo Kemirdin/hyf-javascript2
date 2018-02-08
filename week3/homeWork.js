@@ -153,31 +153,32 @@ function repeatStringNumTimes(str, num) {
   
 //-----Q3.2-----
 //A do loop.
-function repeatStringNumTimes(str, num) {
+{
+  function repeatStringNumTimes(str, num) {
 
-  var newStr = '';
-  var num = 0;
-  do {
-    num += 1;
+    var newStr = '';
+    var num = 0;
+    do {
+      num += 1;
+
+    }
+
+    while (num < str.length);
+
+
+
+
+    newStr = str.repeat(num);
+
+    return newStr;
 
   }
 
-  while (num < str.length);
 
+  console.log(repeatStringNumTimes("abc", 3));
 
-
-
-  newStr = str.repeat(num);
-
-  return newStr;
 
 }
-
-
- console.log(repeatStringNumTimes("abc", 3));
-
-
-
 
 console.log(
   '\n***************question 4 ************************************************************\n'
