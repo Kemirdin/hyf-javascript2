@@ -67,18 +67,18 @@ setTimeout(function () {
 
 
 
-  // uses a closure
-  function sayDivisibleBy(divisor) {
-    return function (num) {
-      console.log(`${num} is divisible by ${divisor}`);
-    }
-  }
+  // // uses a closure
+  // function sayDivisibleBy(divisor) {
+  //   return function (num) {
+  //     console.log(`${num} is divisible by ${divisor}`);
+  //   }
+  // }
 
-  threeFive(10, 15, sayDivisibleBy(3), sayDivisibleBy(5));
+  // threeFive(10, 15, sayDivisibleBy(3), sayDivisibleBy(5));
 
   
 
-
+//I have still problems.with 4.2. 
 
 
 
@@ -108,6 +108,7 @@ console.log(
 
 
 //-----Q3.1-----//
+// I have modified with console.log and with {}.
 
 {
   function repeatStringNumTimes(str, num) {
@@ -130,6 +131,7 @@ console.log(
 }
 //-----Q3.2-----
 //A while loop.
+// I have modified with console.log and with {}.
 {
 function repeatStringNumTimes(str, num) {
 
@@ -153,6 +155,7 @@ function repeatStringNumTimes(str, num) {
   
 //-----Q3.3-----
 //A do loop.
+// I have modified with console.log and with {}.
 {
   function repeatStringNumTimes(str, num) {
 
