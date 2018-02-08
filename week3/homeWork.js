@@ -39,29 +39,10 @@ setTimeout(function () {
 }, 5000);
 
 //-------------//
-// let new1Array = [];
+ //my  mistake was that  if(i % 3 === 0 && i % 5 === 0){
 
-// function loveTheThrees(collection) {
-//   for (let i = 0; i < collection.length; i++) {
-//     if (myArray[i] % 3 === 0) {
-//       new1Array.push(collection[i])
-//     }
-//   }
-//   return new1Array;
-// }
 
-// //-------------//
-// let new2Array = [];
 
-// function loveTheFives (collection) {
- 
-//   for (let i = 0; i < collection.length; i++) {
-//     if (myArray[i] % 5 === 0) {
-//       new2Array.push (collection[i]);
-//     }
-//   }
-//   return new2Array;
-// }
 
 //-------------//
 function threeFive (startIndex, stopIndex, threeCallback, fiveCallback) {
