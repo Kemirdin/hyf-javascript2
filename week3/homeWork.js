@@ -12,7 +12,7 @@ console.log (
 function foo(x) {
    
 
-  console.log('Hi, myFunction here!');
+  
   x();
 }
 function bar() {
