@@ -45,43 +45,56 @@ setTimeout(function () {
 
 
 //-------------//
-function threeFive (startIndex, stopIndex, threeCallback, fiveCallback) {
-  var arr = [];
-  for (var i = startIndex; i <= stopIndex; i++) {
-    arr.push (i);
-    if (i % 3 === 0) {
-      threeCallback (i);
-    }
-    if (i % 5 === 0) {
-      fiveCallback (i);
-    }
+let divisibleBy3 = x => {
+  // if (x % 3 === 0 && x % 5 === 0) {
+  
+  if (x % 3 === 0) {
+    console.log (x + ' is divisible by 3.');
   }
-
-  return arr;
-}
-console.log (
-  threeFive (
-    10,
-    15,
-    function (num) {
-      console.log (num + ' is divisible by 3');
-    },
-    function (num) {
-      console.log (num + ' is divisible by 5');
-    }
-  )
-);
-
-
-
-  // uses a closure
-  function sayDivisibleBy(divisor) {
-    return function (num) {
-      console.log(`${num} is divisible by ${divisor}`);
-    }
+};
+let divisibleBy5 = x => {
+  // if (x % 5 === 0 && x % 3 === 0) {
+ 
+    if (x % 5 === 0) {
+    console.log (x + ' is divisible by 5.');
   }
+};
+let myFunction = (startVal, endVal, x, y) => {
+  let myArray = [];
+  for (let i = startVal; i <= endVal; i++) {
+    myArray.push (startVal);
+    startVal++;
+  }
+  console.log (myArray);
+  myArray.forEach (x);
+  myArray.forEach (y);
+};
+myFunction (15, 25, divisibleBy3, divisibleBy5);
 
-  threeFive(10, 15, sayDivisibleBy(3), sayDivisibleBy(5));
+
+// console.log (
+//   threeFive (
+//     10,
+//     15,
+//     function (num) {
+//       console.log (num + ' is divisible by 3');
+//     },
+//     function (num) {
+//       console.log (num + ' is divisible by 5');
+//     }
+//   )
+// );
+
+
+
+  // // uses a closure
+  // function sayDivisibleBy(divisor) {
+  //   return function (num) {
+  //     console.log(`${num} is divisible by ${divisor}`);
+  //   }
+  // }
+
+  // threeFive(10, 15, sayDivisibleBy(3), sayDivisibleBy(5));
 
   
 
