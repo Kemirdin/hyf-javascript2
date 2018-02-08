@@ -204,11 +204,11 @@ console.log(
 //Nesting For Loops
 
 function multiplyAll(arr) {
-  var product = 1;
+  let product = 1;
  
 
-  for (var i = 0; i < arr.length; i++) {
-    for (var x = 0; x < arr[i].length; x++) {
+  for (let i = 0; i < arr.length; i++) {
+    for (let x = 0; x < arr[i].length; x++) {
       product *= arr[i][x];
     }
   }
