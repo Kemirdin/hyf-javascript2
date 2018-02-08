@@ -39,29 +39,29 @@ setTimeout(function () {
 }, 5000);
 
 //-------------//
-let new1Array = [];
+// let new1Array = [];
 
-function loveTheThrees(collection) {
-  for (let i = 0; i < collection.length; i++) {
-    if (myArray[i] % 3 === 0) {
-      new1Array.push(collection[i])
-    }
-  }
-  return new1Array;
-}
+// function loveTheThrees(collection) {
+//   for (let i = 0; i < collection.length; i++) {
+//     if (myArray[i] % 3 === 0) {
+//       new1Array.push(collection[i])
+//     }
+//   }
+//   return new1Array;
+// }
 
-//-------------//
-let new2Array = [];
+// //-------------//
+// let new2Array = [];
 
-function loveTheFives (collection) {
+// function loveTheFives (collection) {
  
-  for (let i = 0; i < collection.length; i++) {
-    if (myArray[i] % 5 === 0) {
-      new2Array.push (collection[i]);
-    }
-  }
-  return new2Array;
-}
+//   for (let i = 0; i < collection.length; i++) {
+//     if (myArray[i] % 5 === 0) {
+//       new2Array.push (collection[i]);
+//     }
+//   }
+//   return new2Array;
+// }
 
 //-------------//
 
