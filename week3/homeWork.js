@@ -260,7 +260,7 @@ for (let i = 0; i < myArray.length; i++) {
 console.log(
   '\n***************question 7 ************************************************************\n'
 );
-
+//I have forgotten my conclusion
 let x = 9;
 function f1 (val) {
   val = val + 1;
