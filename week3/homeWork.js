@@ -130,7 +130,7 @@ console.log(
 }
 //-----Q3.2-----
 //A while loop.
-
+{
 function repeatStringNumTimes(str, num) {
 
   var newStr = '';
@@ -149,9 +149,9 @@ function repeatStringNumTimes(str, num) {
    
    console.log (repeatStringNumTimes("abc", 3));
 
+}
   
-  
-//-----Q3.2-----
+//-----Q3.3-----
 //A do loop.
 {
   function repeatStringNumTimes(str, num) {
