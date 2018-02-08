@@ -67,23 +67,6 @@ function loveTheFives (collection) {
 
 
 
-
-  function threeFive(startIndex, stopIndex) {
-    const numbers = [];
-    for (let i = startIndex; i <= stopIndex; i++) {
-      numbers.push(i);
-    }
-
-    numbers.forEach(num => {
-      if (num % 3 === 0) {
-        loveTheThrees(num);
-      }
-      if (num % 5 === 0) {
-        loveTheFives(num);
-      }
-    })
-  }
-
   // uses a closure
   function sayDivisibleBy(divisor) {
     return function (num) {
