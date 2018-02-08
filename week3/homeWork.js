@@ -238,7 +238,7 @@ console.log(
   //What if you didn't know how deep the array was nested? (You don't have to write code for this but think about it)  
 
 
-
+//4.6 I have found the problem function name was not the same on for loop
  
   let myArray = [
     [1, 2],
