@@ -72,33 +72,7 @@ let myFunction = (startVal, endVal, loveTheThrees, loveTheFives) => {
 myFunction (15, 25, divisibleBy3, divisibleBy5);
 
 
-// console.log (
-//   threeFive (
-//     10,
-//     15,
-//     function (num) {
-//       console.log (num + ' is divisible by 3');
-//     },
-//     function (num) {
-//       console.log (num + ' is divisible by 5');
-//     }
-//   )
-// );
 
-
-
-  // // uses a closure
-  // function sayDivisibleBy(divisor) {
-  //   return function (num) {
-  //     console.log(`${num} is divisible by ${divisor}`);
-  //   }
-  // }
-
-  // threeFive(10, 15, sayDivisibleBy(3), sayDivisibleBy(5));
-
-  
-
-//I have still problems.with 4.2. 
 
 
 
